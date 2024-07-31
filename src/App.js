@@ -51,7 +51,7 @@ import StarRating from "./StarRating";
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
 
-const KEY = "d77e4d09";
+const KEY = process.env.REACT_APP_OMDB_API_KEY;
 
 export default function App() {
   const [movies, setMovies] = useState([]);
